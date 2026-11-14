@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Tool — Downloads</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .container {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      max-width: 480px;
+      width: 100%;
+      padding: 32px 28px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: #8b949e;
+      font-size: 0.95rem;
+      margin-bottom: 28px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .download-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #238636;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.15s ease;
+    }
+    .download-btn:hover {
+      background-color: #2ea043;
+    }
+    .download-btn.secondary {
+      background-color: #1f6feb;
+    }
+    .download-btn.secondary:hover {
+      background-color: #388bfd;
+    }
+    .file-tag {
+      font-size: 0.8rem;
+      font-weight: 400;
+      opacity: 0.9;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Audit Utility Download</h1>
+    <p class="subtitle">Select your operating system to download the package.</p>
+
+    <div class="btn-group">
+      <a class="download-btn" href="./Audit_Windows.zip" download>
+        <span>Download for Windows</span>
+        <span class="file-tag">Audit_Windows.zip</span>
+      </a>
+
+      <a class="download-btn secondary" href="./Audit_Mac.zip" download>
+        <span>Download for macOS</span>
+        <span class="file-tag">Audit_Mac.zip</span>
+      </a>
+
+      <a class="download-btn secondary" href="./Audit_Linux.zip" download>
+        <span>Download for Linux</span>
+        <span class="file-tag">Audit_Linux.zip</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
